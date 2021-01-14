@@ -10,6 +10,7 @@
 /* background-color:  #2f303a */
 /* #eeeeee */
 /* #ececec */
+/* rgba(47, 48, 58, 0.4); */
 
 :root {
   --main-dark-color: #212121;
@@ -23,6 +24,7 @@
   --background-team-section: #f5f4fa;
   --container-border: #eeeeee;
   --header-border: #ececec;
+  --overlay-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -164,8 +166,15 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(var(--overlay-color, var(--overlay-color))),
+    url(../img/Img-hero-banner.jpg);
 }
 
 .div-hero {
