@@ -130,6 +130,10 @@ a:focus:not(.logo):not(.project-link) {
   padding-bottom: 33px;
 }
 
+.contacts-list .item svg {
+  margin-right: 10px;
+}
+
 .contacts-list .item + .item {
   margin-left: 50px;
 }
@@ -161,19 +165,20 @@ h2 {
 }
 
 .hero-banner {
-  background-color: var(--hero-background-color);
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-}
 
-.overlay {
+  background-color: var(--hero-background-color);
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(var(--overlay-color, var(--overlay-color))),
+}
+
+.overlay {
+  background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
     url(../img/Img-hero-banner.jpg);
 }
 
@@ -225,6 +230,14 @@ h2 {
   margin: 0;
   line-height: 1.71;
   color: var(--second-dark-color);
+}
+
+/* Иконка спрайта svg */
+.icon-feature {
+  width: 270px;
+  height: 70px;
+  background-color: var(--background-team-section);
+  margin-bottom: 30px;
 }
 
 .business {
@@ -279,7 +292,43 @@ h2 {
   line-height: 1.187;
   text-align: center;
   color: var(--second-dark-color);
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-team-list li + li {
+  margin-left: 10px;
+}
+
+.social-team-link:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-social-team {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-social-team {
+  fill: #afb1b8;
+}
+
+.icon-social-team:hover {
+  fill: var(--white-color);
 }
 
 .gallery {
