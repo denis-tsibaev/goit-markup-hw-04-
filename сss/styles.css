@@ -122,6 +122,8 @@ a:focus:not(.logo):not(.project-link) {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--second-dark-color);
+  display: flex;
+  align-items: center;
 }
 
 .contacts-list {
@@ -129,7 +131,7 @@ a:focus:not(.logo):not(.project-link) {
   align-items: center;
 }
 
-.contacts-list .item a {
+.contacts-list .contacts {
   padding-top: 33px;
   padding-bottom: 33px;
 }
@@ -139,7 +141,7 @@ a:focus:not(.logo):not(.project-link) {
   fill: var(--second-dark-color);
 }
 
-.contacts-list .item svg:hover {
+.contacts-list .item:hover svg {
   fill: var(--accent-color);
 }
 
@@ -334,14 +336,14 @@ h2 {
   background-color: var(--accent-color);
 }
 
+.social-team-link:hover .icon-social-team {
+  fill: var(--white-color);
+}
+
 .icon-social-team {
   width: 20px;
   height: 20px;
   fill: var(--fill-logo);
-}
-
-.icon-social-team:hover {
-  fill: var(--white-color);
 }
 
 .gallery {
@@ -439,7 +441,7 @@ h2 {
   margin-left: 30px;
 }
 
-.customers-list a {
+.customer-logo-link {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -451,6 +453,14 @@ h2 {
 
 .customer-logo {
   fill: var(--fill-logo);
+}
+
+.customer-logo-link:hover {
+  border-color: var(--accent-color);
+}
+
+.customer-logo-link:hover .customer-logo {
+  fill: var(--accent-color);
 }
 
 .customers-list .logo1 {
@@ -481,10 +491,6 @@ h2 {
 .customers-list .logo6 {
   width: 88.48px;
   height: 45.44px;
-}
-
-.customer-logo:hover {
-  fill: var(--accent-color);
 }
 
 address {
