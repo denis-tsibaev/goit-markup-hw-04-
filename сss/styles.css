@@ -12,6 +12,7 @@
 /* #ececec */
 /* rgba(47, 48, 58, 0.4); */
 /* #AFB1B8 */
+/* rgba(255, 255, 255, 0.1); */
 
 :root {
   --main-dark-color: #212121;
@@ -27,6 +28,7 @@
   --header-border: #ececec;
   --overlay-color: rgba(47, 48, 58, 0.4);
   --fill-logo: #afb1b8;
+  --social-footer-bg: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -239,12 +241,19 @@ h2 {
   color: var(--second-dark-color);
 }
 
-/* Иконка спрайта svg */
-.icon-feature {
+.bg-feature-icon {
   width: 270px;
-  height: 70px;
+  height: 120px;
   background-color: var(--background-team-section);
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-feature {
+  width: 70px;
+  height: 70px;
 }
 
 .business {
@@ -417,7 +426,6 @@ h2 {
 }
 
 /* Постоянные клиенты */
-
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -431,12 +439,48 @@ h2 {
   margin-left: 30px;
 }
 
-.customer-logo {
-  fill: var(--fill-logo);
+.customers-list a {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-logo {
+  fill: var(--fill-logo);
+}
+
+.customers-list .logo1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.customers-list .logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.customers-list .logo3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.customers-list .logo4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.customers-list .logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.customers-list .logo6 {
+  width: 88.48px;
+  height: 45.44px;
 }
 
 .customer-logo:hover {
@@ -455,6 +499,71 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-background-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .left-side {
+  margin-right: 70px;
+}
+
+.footer .right-side h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list li + li {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--social-footer-bg);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list .instagram {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.social-list .twitter {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.social-list .facebook {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.social-list .linkedin {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
 }
 
 .footer address {
