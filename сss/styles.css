@@ -11,6 +11,7 @@
 /* #eeeeee */
 /* #ececec */
 /* rgba(47, 48, 58, 0.4); */
+/* #AFB1B8 */
 
 :root {
   --main-dark-color: #212121;
@@ -25,6 +26,7 @@
   --container-border: #eeeeee;
   --header-border: #ececec;
   --overlay-color: rgba(47, 48, 58, 0.4);
+  --fill-logo: #afb1b8;
 }
 
 body {
@@ -132,6 +134,11 @@ a:focus:not(.logo):not(.project-link) {
 
 .contacts-list .item svg {
   margin-right: 10px;
+  fill: var(--second-dark-color);
+}
+
+.contacts-list .item svg:hover {
+  fill: var(--accent-color);
 }
 
 .contacts-list .item + .item {
@@ -321,10 +328,7 @@ h2 {
 .icon-social-team {
   width: 20px;
   height: 20px;
-}
-
-.icon-social-team {
-  fill: #afb1b8;
+  fill: var(--fill-logo);
 }
 
 .icon-social-team:hover {
@@ -410,6 +414,33 @@ h2 {
   line-height: 1.875;
   color: var(--second-dark-color);
   margin: 0;
+}
+
+/* Постоянные клиенты */
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-list {
+  display: flex;
+}
+
+.customers-list li + li {
+  margin-left: 30px;
+}
+
+.customer-logo {
+  fill: var(--fill-logo);
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customer-logo:hover {
+  fill: var(--accent-color);
 }
 
 address {
