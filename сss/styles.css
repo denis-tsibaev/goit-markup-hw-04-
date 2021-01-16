@@ -192,7 +192,7 @@ h2 {
 
 .overlay {
   background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
-    url(../img/img-hero-banner.jpg);
+    url(../img/Img-hero-banner.jpg);
 }
 
 .div-hero-txt {
